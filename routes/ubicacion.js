@@ -36,6 +36,7 @@ app.put('/:id', (req, res) => {
     Ubicacion.findById(id, (err, ubicacion) => {
 
         if (err) {
+            logger.info('usuario creado: ' + err);
             return res.status(500).json({
                 ok: false,
                 mensaje: 'Error al buscar ubicacion',
