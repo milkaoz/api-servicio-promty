@@ -1,0 +1,11 @@
+
+info: Express server puerto: 3002 on line
+info: Base de datos On line
+[2019-10-16T12:34:45.360Z] info Express server puerto: 3002 on line
+[2019-10-16T12:34:46.429Z] info Base de datos On line
+[2019-10-16T12:35:38.031Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T12:35:38.086Z] info Express server puerto: 3002 on line
+[2019-10-16T12:35:39.151Z] info Base de datos On line
+[2019-10-16T12:36:44.433Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T12:36:44.485Z] info Express server puerto: 3002 on line
+[2019-10-16T12:36:45.546Z] info Base de datos On line

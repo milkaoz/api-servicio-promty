@@ -4,6 +4,7 @@ var express = require('express');
 var cors = require('cors');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+const logger = require('./utils/logger');
 
 var app = express();
 
@@ -18,7 +19,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
 var stringDB = 'mongodb://' + config.database.mongoUser + ':' + config.database.mongoPass + '@' + config.database.mongoHost + ':' + config.database.mongoPort + '/' + config.database.mongoDB;
-console.log('stringDB: ' + stringDB);
+logger.info('stringDB: ' + stringDB);
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
@@ -27,7 +28,7 @@ mongoose.set('useCreateIndex', true);
 //conexion base de datos
 mongoose.connection.openUri(stringDB, (err, res) => {
     if (err) throw err;
-    console.log('Base de datos: \x1b[32m%s\x1b[0m', 'On line');
+    logger.info('Base de datos On line');
 });
 
 
@@ -46,5 +47,5 @@ app.use('/', appRoutes);
 
 // Escuchar peticiones
 app.listen(3002, () => {
-    console.log('Express server puerto: 3002 on line');
+    logger.info('Express server puerto: 3002 on line');
 });
