@@ -3,6 +3,10 @@ var app = express();
 var Ubicacion = require('../models/ubicacion');
 const logger = require('./../utils/logger');
 
+
+// ================================================
+// Obtiene todas las ubicaciones
+// ================================================
 app.get('/', (req, res, next) => {
     Ubicacion.find({}, (err, ubicaciones) => {
         if (err) {
@@ -23,65 +27,6 @@ app.get('/', (req, res, next) => {
 
 });
 
-
-// ================================================
-// Actualizar un Ubicacion
-// ================================================
-
-app.put('/:id', (req, res) => {
-
-    var id = req.params.id;
-    var body = req.body;
-
-    Ubicacion.findById(id, (err, ubicacion) => {
-
-        if (err) {
-            logger.info('usuario creado: ' + err);
-            return res.status(500).json({
-                ok: false,
-                mensaje: 'Error al buscar ubicacion',
-                errors: err
-            });
-        }
-        if (!ubicacion) {
-            if (err) {
-                return res.status(400).json({
-                    ok: false,
-                    mensaje: 'La ubicacion con el id: ' + id + 'no existe',
-                    errors: { message: 'No existe un ubicacion con ese ID' }
-                });
-            }
-        }
-
-
-        ubicacion.nombre = body.nombre;
-        ubicacion.descripcion = body.descripcion;
-        ubicacion.planta = body.planta;
-        ubicacion.tipoUbicacion = body.tipoUbicacion;
-
-        ubicacion.save((err, ubicacionGuardado) => {
-            if (err) {
-                return res.status(400).json({
-                    ok: false,
-                    mensaje: 'Error al actualizar el ubicacion',
-                    errors: err
-                });
-            }
-
-            usuarioGuardado.password = ':)';
-
-            res.status(200).json({
-                ok: true,
-                usuario: usuarioGuardado
-            });
-
-        });
-
-
-
-    });
-
-});
 
 // ================================================
 // Crear un ubicacion
@@ -118,6 +63,68 @@ app.post('/', (req, res) => {
 
 
 });
+
+// ================================================
+// Actualizar un Ubicacion
+// ================================================
+
+app.put('/:id', (req, res) => {
+    logger.info('Inicia Put ubicacion');
+    var id = req.params.id;
+    var body = req.body;
+
+    Ubicacion.findById(id, (err, ubicacion) => {
+
+        if (err) {
+            logger.info('Error al intentar buscar la ubicacion: ' + err);
+            return res.status(500).json({
+                ok: false,
+                mensaje: 'Error al buscar ubicacion',
+                errors: err
+            });
+        }
+        if (!ubicacion) {
+            if (err) {
+                logger.info('La ubicacion con el id: ' + id + 'no existe ');
+                return res.status(400).json({
+                    ok: false,
+                    mensaje: 'La ubicacion con el id: ' + id + 'no existe',
+                    errors: { message: 'No existe un ubicacion con ese ID' }
+                });
+            }
+        }
+
+        ubicacion.nombre = body.nombre;
+        ubicacion.descripcion = body.descripcion;
+        ubicacion.planta = body.planta;
+        ubicacion.tipoUbicacion = body.tipoUbicacion;
+
+        ubicacion.save((err, ubicacionGuardado) => {
+            if (err) {
+                logger.info('Error al actualizar la ubicacion ');
+                return res.status(400).json({
+                    ok: false,
+                    mensaje: 'Error al actualizar el ubicacion',
+                    errors: err
+                });
+            }
+
+
+            res.status(200).json({
+                ok: true,
+                usuario: usuarioGuardado,
+                mensaje: 'Actualizacion ejecutada correctamente'
+            });
+            logger.info('Actualizacion ejecutada correctamente ');
+        });
+
+
+
+    });
+
+});
+
+
 
 // ================================================
 // Eliminar usuario

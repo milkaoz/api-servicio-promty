@@ -1,1 +1,21 @@
 
+[2019-10-16T20:16:49.958Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T20:16:50.069Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T20:16:51.132Z] [32minfo[39m Base de datos On line
+[2019-10-16T20:17:55.423Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T20:17:55.482Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T20:17:56.532Z] [32minfo[39m Base de datos On line
+[2019-10-16T20:18:46.042Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T20:18:46.098Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T20:18:47.141Z] [32minfo[39m Base de datos On line
+[2019-10-16T20:19:14.651Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T20:19:14.713Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T20:19:15.755Z] [32minfo[39m Base de datos On line
+[2019-10-16T20:20:07.564Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T20:20:07.628Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T20:20:08.681Z] [32minfo[39m Base de datos On line
+[2019-10-16T20:20:11.526Z] [32minfo[39m Obtiene ubicaciones
+[2019-10-16T20:21:14.543Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T20:21:14.596Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T20:21:15.708Z] [32minfo[39m Base de datos On line
+[2019-10-16T20:21:21.215Z] [32minfo[39m Obtiene ubicaciones
