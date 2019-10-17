@@ -19,3 +19,23 @@
 [2019-10-16T20:21:14.596Z] [32minfo[39m Express server puerto: 3002 on line
 [2019-10-16T20:21:15.708Z] [32minfo[39m Base de datos On line
 [2019-10-16T20:21:21.215Z] [32minfo[39m Obtiene ubicaciones
+[2019-10-16T23:52:46.676Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T23:52:46.752Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T23:52:46.974Z] [32minfo[39m Base de datos On line
+[2019-10-16T23:54:47.320Z] [32minfo[39m stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-16T23:54:47.395Z] [32minfo[39m Express server puerto: 3002 on line
+[2019-10-16T23:54:47.474Z] [32minfo[39m Base de datos On line
+[2019-10-16T23:54:58.587Z] [32minfo[39m Obtiene ubicaciones
+[2019-10-16T23:56:22.854Z] [32minfo[39m usuario creado: sala 1
+[2019-10-16T23:56:28.082Z] [32minfo[39m Obtiene ubicaciones
+[2019-10-16T23:57:38.531Z] [32minfo[39m usuario creado: seccion 1
+[2019-10-16T23:58:31.146Z] [32minfo[39m Inicia Put ubicacion
+[2019-10-16T23:58:31.239Z] [32minfo[39m Error al actualizar la ubicacion 
+[2019-10-16T23:58:40.717Z] [32minfo[39m Inicia Put ubicacion
+[2019-10-16T23:58:40.725Z] [32minfo[39m Error al actualizar la ubicacion 
+[2019-10-16T23:58:48.124Z] [32minfo[39m Error al crear ubicacion: ValidationError: nombre: nombre debe ser unico
+[2019-10-16T23:58:52.303Z] [32minfo[39m Obtiene ubicaciones
+[2019-10-16T23:59:07.549Z] [32minfo[39m Inicia Put ubicacion
+[2019-10-16T23:59:07.570Z] [32minfo[39m Error al actualizar la ubicacion 
+[2019-10-16T23:59:11.998Z] [32minfo[39m Inicia Put ubicacion
+[2019-10-16T23:59:12.076Z] [32minfo[39m Error al actualizar la ubicacion 

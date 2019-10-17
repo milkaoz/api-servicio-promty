@@ -26,7 +26,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
 //conexion base de datos
-mongoose.connection.openUri(stringDB, (err, res) => {
+mongoose.connect(stringDB, { useUnifiedTopology: true }, (err, res) => {
     if (err) throw err;
     logger.info('Base de datos On line');
 });
