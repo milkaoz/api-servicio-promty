@@ -71,10 +71,10 @@ app.post('/', (req, res) => {
 app.put('/:id', (req, res) => {
     logger.info('Inicia Put ubicacion');
     var id = req.params.id;
-    var body = req.body;
+
 
     Ubicacion.findById(id, (err, ubicacion) => {
-
+        logger.info('FindByid: ' + ubicacion);
         if (err) {
             logger.info('Error al intentar buscar la ubicacion: ' + err);
             return res.status(500).json({
@@ -94,10 +94,10 @@ app.put('/:id', (req, res) => {
             }
         }
 
-        ubicacion.nombre = body.nombre;
-        ubicacion.descripcion = body.descripcion;
-        ubicacion.planta = body.planta;
-        ubicacion.tipoUbicacion = body.tipoUbicacion;
+        ubicacion.nombre = req.body.nombre;
+        ubicacion.descripcion = req.body.descripcion;
+        ubicacion.planta = req.body.planta;
+        ubicacion.tipoUbicacion = req.body.tipoUbicacion;
 
         ubicacion.save((err, ubicacionGuardado) => {
             if (err) {
@@ -135,6 +135,7 @@ app.delete('/:id', (req, res) => {
 
     Ubicacion.findByIdAndRemove(id, (err, ubicacionBorrado) => {
         if (err) {
+            logger.info('Error al actualizar la ubicacion ');
             return res.status(500).json({
                 ok: false,
                 mensaje: 'Error al borrar ubicacion',
@@ -143,6 +144,7 @@ app.delete('/:id', (req, res) => {
         }
 
         if (!ubicacionBorrado) {
+            logger.info('No existe un ubicacion con el id: ' + id);
             return res.status(400).json({
                 ok: false,
                 mensaje: 'No existe una ubicacion con ese ID',
@@ -154,9 +156,12 @@ app.delete('/:id', (req, res) => {
             ok: true,
             ubicacion: ubicacionBorrado
         });
+        logger.info('Ubicacion con el id: ' + id + ' Borrado correctamente');
 
     });
 
 });
+
+
 
 module.exports = app;
