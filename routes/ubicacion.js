@@ -74,7 +74,7 @@ app.put('/:id', (req, res) => {
 
     Ubicacion.findById(id, (err, ubicacion) => {
         if (err) {
-            //logger.info('Error al buscar ubicacion con el id: ' + id);
+            logger.info('Error al buscar ubicacion con el id: ' + id);
             return res.status(500).json({
                 ok: false,
                 mensaje: 'Error al buscar ubicacion con el id: ' + id,
@@ -82,7 +82,7 @@ app.put('/:id', (req, res) => {
             });
         }
         if (!ubicacion) {
-            //logger.info('Error al buscar ubicacion con el id: ' + id);
+            logger.info('Error al buscar ubicacion con el id: ' + id);
             return res.status(400).json({
                 ok: false,
                 mensaje: 'Error al buscar ubicacion con el id: ' + id,
@@ -115,71 +115,6 @@ app.put('/:id', (req, res) => {
         });
     });
 });
-
-
-/* 
-app.put('/:id', (req, res) => {
-    logger.info('Inicia Put ubicacion');
-    var id = req.params.id;
-    //logger.info('id: ' + id);
-
-    Ubicacion.findByIdAndUpdate(id, (err, ubicacion) => {
-        logger.info('FindByid: ' + ubicacion);
-        if (err) {
-            logger.info('Error al intentar buscar la ubicacion: ' + err);
-            return res.status(500).json({
-                ok: false,
-                mensaje: 'Error al buscar ubicacion',
-                errors: err
-            });
-        }
-        if (!ubicacion) {
-            if (err) {
-                logger.info('La ubicacion con el id: ' + id + 'no existe ');
-                return res.status(400).json({
-                    ok: false,
-                    mensaje: 'La ubicacion con el id: ' + id + 'no existe',
-                    errors: { message: 'No existe un ubicacion con ese ID' }
-                });
-            }
-        }
-
-        if (ubicacion != null) {
-            ubicacion.nombre = req.body.nombre;
-            ubicacion.descripcion = req.body.descripcion;
-            ubicacion.planta = req.body.planta;
-            ubicacion.tipoUbicacion = req.body.tipoUbicacion;
-            ubicacion.fechaModificacion = Date.now();
-
-            ubicacion.save((err, ubicacionGuardado) => {
-                if (err) {
-                    logger.info('Error al actualizar la ubicacion ');
-                    return res.status(400).json({
-                        ok: false,
-                        mensaje: 'Error al actualizar el ubicacion',
-                        errors: err
-                    });
-                }
-
-                res.status(200).json({
-                    ok: true,
-                    usuario: ubicacionGuardado,
-                    mensaje: 'Actualizacion ejecutada correctamente'
-                });
-                logger.info('Actualizacion ejecutada correctamente ');
-            });
-        } else {
-            logger.info('La ubicacion con el id : ' + id + 'no existe');
-            return res.status(500).json({
-                ok: false,
-                mensaje: 'Error al buscar ubicacion xxx',
-                errors: err
-            });
-        }
-    });
-
-});
-*/
 
 // ================================================
 // Eliminar usuario

@@ -34,12 +34,19 @@ mongoose.connect(stringDB, { useUnifiedTopology: true }, (err, res) => {
 
 // Importar Rutas
 var ubicacionRoutes = require('./routes/ubicacion');
+var usuarioRoutes = require('./routes/usuario');
+var loginRoutes = require('./routes/login');
 var appRoutes = require('./routes/app');
+
+
 
 
 //Injeccion de dependencia
 app.use(cors());
+app.use('/login', loginRoutes);
 app.use('/ubicacion', ubicacionRoutes);
+app.use('/usuario', usuarioRoutes);
+
 app.use('/', appRoutes);
 
 
