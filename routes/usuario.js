@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
 var bcrypt = require('bcryptjs');
+var mdAutenticacion = require('./../middlewares/autenticacion');
 var Usuario = require('../models/usuario');
 const logger = require('./../utils/logger');
-const jwt = require('jsonwebtoken');
-var SEED = require('./../config/config').SEED;
+
 
 // ================================================
 // Obtiene todas los usuarios
@@ -29,33 +29,11 @@ app.get('/', (req, res, next) => {
 
 });
 
-// ================================================
-// Verificar token - Implementacion en Middleware
-// ================================================
-
-app.use('/', (req, res, next) => {
-
-    var token = req.query.token;
-    jwt.verify(token, SEED, (err, decoded) => {
-        if (err) {
-            logger.info('Token no valido: ' + err);
-            return res.status(401).json({
-                ok: false,
-                mensaje: 'Token no valido',
-                errors: err
-            });
-        }
-
-        next();
-
-    });
-
-});
 
 // ================================================
 // Crear un usuario
 // ================================================
-app.post('/', (req, res) => {
+app.post('/', mdAutenticacion.verificaToken, (req, res) => {
 
     var body = req.body;
 
@@ -93,7 +71,7 @@ app.post('/', (req, res) => {
 // Actualizar un Usuario
 // ================================================
 
-app.put('/:id', (req, res) => {
+app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
 
     var id = req.params.id;
     var body = req.body;
@@ -150,7 +128,7 @@ app.put('/:id', (req, res) => {
 // ================================================
 // Eliminar usuario
 // ================================================
-app.delete('/:id', (req, res) => {
+app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
     var id = req.params.id;
 
     Usuario.findByIdAndRemove(id, (err, usuarioBorrado) => {

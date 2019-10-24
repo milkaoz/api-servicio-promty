@@ -1,13 +1,15 @@
 var express = require('express');
 var app = express();
+var mdAutenticacion = require('./../middlewares/autenticacion');
 var Ubicacion = require('../models/ubicacion');
 const logger = require('./../utils/logger');
-
+const jwt = require('jsonwebtoken');
+var SEED = require('./../config/config').SEED;
 
 // ================================================
 // Obtiene todas las ubicaciones
 // ================================================
-app.get('/', (req, res, next) => {
+app.get('/', mdAutenticacion.verificaToken, (req, res, next) => {
     Ubicacion.find({}, (err, ubicaciones) => {
         if (err) {
             logger.info('Error al obtener ubicaciones');
@@ -30,7 +32,7 @@ app.get('/', (req, res, next) => {
 // ================================================
 // Crear un ubicacion
 // ================================================
-app.post('/', (req, res) => {
+app.post('/', mdAutenticacion.verificaToken, (req, res) => {
 
     var body = req.body;
 
@@ -67,7 +69,7 @@ app.post('/', (req, res) => {
 // Actualizar un Ubicacion
 // ================================================
 
-app.put('/:id', (req, res) => {
+app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
 
     var id = req.params.id;
     var body = req.body;
@@ -119,7 +121,7 @@ app.put('/:id', (req, res) => {
 // ================================================
 // Eliminar usuario
 // ================================================
-app.delete('/:id', (req, res) => {
+app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
     var id = req.params.id;
 
     Ubicacion.findByIdAndRemove(id, (err, ubicacionBorrado) => {
