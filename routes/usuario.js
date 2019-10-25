@@ -3,29 +3,42 @@ var app = express();
 var bcrypt = require('bcryptjs');
 var mdAutenticacion = require('./../middlewares/autenticacion');
 var Usuario = require('../models/usuario');
-const logger = require('./../utils/logger');
+const logger = require('../middlewares/logger');
+var config = require('./../config/server');
 
 
 // ================================================
 // Obtiene todas los usuarios
 // ================================================
 app.get('/', (req, res, next) => {
-    Usuario.find({}, 'nombre email role', (err, usuarios) => {
-        if (err) {
-            logger.info('Error al obtener usuarios');
-            return res.status(500).json({
-                ok: false,
-                mensaje: 'Error al obtener usuarios',
-                erros: err
-            });
 
-        }
-        logger.info('Obtiene usuarios');
-        res.status(200).json({
-            ok: true,
-            usuarios: usuarios
-        });
-    });
+    var desde = +req.query.desde || 0;
+
+    Usuario.find({}, 'nombre email role')
+        .skip(desde)
+        .limit(+config.parametro.paginacionApi)
+        .exec(
+            (err, usuarios) => {
+                if (err) {
+                    logger.error('Error al obtener usuarios');
+                    return res.status(500).json({
+                        ok: false,
+                        mensaje: 'Error al obtener usuarios',
+                        erros: err
+                    });
+
+                }
+                Usuario.count({}, (error, conteo) => {
+
+                    logger.info('Usuario: Obtiene todas los usuarios');
+                    res.status(200).json({
+                        ok: true,
+                        usuarios: usuarios,
+                        total: conteo,
+                    });
+
+                });
+            });
 
 });
 
@@ -47,7 +60,7 @@ app.post('/', mdAutenticacion.verificaToken, (req, res) => {
 
     usuario.save((err, usuarioGuardada) => {
         if (err) {
-            logger.info('Error al crear usuario: ' + err);
+            logger.error('Error al crear usuario: ' + err);
             return res.status(400).json({
                 ok: false,
                 mensaje: 'Error al crear usuario',
@@ -78,7 +91,7 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
 
     Usuario.findById(id, (err, usuario) => {
         if (err) {
-            logger.info('Error al buscar usuario con el idX: ' + id);
+            logger.error('Error al buscar usuario con el idX: ' + id);
             return res.status(500).json({
                 ok: false,
                 mensaje: 'Error al buscar usuario con el idX: ' + id,
@@ -86,7 +99,7 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
             });
         }
         if (!usuario) {
-            logger.info('Error al buscar usuario con el id: ' + id);
+            logger.error('Error al buscar usuario con el id: ' + id);
             return res.status(400).json({
                 ok: false,
                 mensaje: 'Error al buscar usuario con el id: ' + id,
@@ -103,7 +116,7 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
             usuario.save((err, usuarioGuardada) => {
 
                 if (err) {
-                    logger.info('Error al actualizar usuario con el id: ' + id);
+                    logger.error('Error al actualizar usuario con el id: ' + id);
                     return res.status(400).json({
                         ok: false,
                         mensaje: 'Error al actualizar usuario con el id: ' + id,
@@ -117,10 +130,10 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
                     usuario: usuarioGuardada,
                     mensaje: 'La usuario con el id: ' + id + ' ha sido actualizado correctamente',
                 });
-                logger.info('usuario con el id: ' + id + ' actualiza correctamente');
+                logger.info('Usuario: Actualiza un usuario: "' + id + '" actualizado correctamente');
             });
         } catch (e) {
-            logger.info('Error no contralado: ' + e.message);
+            logger.error('Error no contralado: ' + e.message);
         }
     });
 });
@@ -133,7 +146,7 @@ app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
 
     Usuario.findByIdAndRemove(id, (err, usuarioBorrado) => {
         if (err) {
-            logger.info('Error al actualizar la usuario ');
+            logger.error('Error al actualizar la usuario ');
             return res.status(500).json({
                 ok: false,
                 mensaje: 'Error al borrar usuario',
@@ -142,7 +155,7 @@ app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
         }
 
         if (!usuarioBorrado) {
-            logger.info('No existe un usuario con el id: ' + id);
+            logger.error('No existe un usuario con el id: ' + id);
             return res.status(400).json({
                 ok: false,
                 mensaje: 'No existe una usuario con ese ID',
@@ -155,7 +168,7 @@ app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
             usuario: usuarioBorrado,
             mensaje: 'El usuario con el id: ' + id + ' ha sido borrado correctamente',
         });
-        logger.info('Usuario con el id: ' + id + ' Borrado correctamente');
+        logger.info('Usuario: Elimina un usuario: "' + id + '" Borrado correctamente');
 
     });
 

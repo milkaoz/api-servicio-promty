@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 var SEED = require('./../config/config').SEED;
-const logger = require('./../utils/logger');
+const logger = require('./logger');
 
 // ================================================
 // Verificar token - Implementacion en Middleware

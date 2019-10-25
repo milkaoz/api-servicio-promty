@@ -4,7 +4,7 @@ var express = require('express');
 var cors = require('cors');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-const logger = require('./utils/logger');
+const logger = require('./middlewares/logger');
 
 var app = express();
 
@@ -33,9 +33,11 @@ mongoose.connect(stringDB, { useUnifiedTopology: true }, (err, res) => {
 
 
 // Importar Rutas
+var busquedaRoutes = require('./routes/busqueda');
+var animalRoutes = require('./routes/animal');
 var ubicacionRoutes = require('./routes/ubicacion');
-var usuarioRoutes = require('./routes/usuario');
 var loginRoutes = require('./routes/login');
+var usuarioRoutes = require('./routes/usuario');
 var appRoutes = require('./routes/app');
 
 
@@ -43,10 +45,11 @@ var appRoutes = require('./routes/app');
 
 //Injeccion de dependencia
 app.use(cors());
-app.use('/login', loginRoutes);
+app.use('/busqueda', busquedaRoutes);
+app.use('/animal', animalRoutes);
 app.use('/ubicacion', ubicacionRoutes);
+app.use('/login', loginRoutes);
 app.use('/usuario', usuarioRoutes);
-
 app.use('/', appRoutes);
 
 

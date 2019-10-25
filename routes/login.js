@@ -3,7 +3,7 @@ var app = express();
 
 var bcrypt = require('bcryptjs');
 var Usuario = require('../models/usuario');
-const logger = require('./../utils/logger');
+const logger = require('../middlewares/logger');
 const jwt = require('jsonwebtoken');
 var SEED = require('./../config/config').SEED;
 

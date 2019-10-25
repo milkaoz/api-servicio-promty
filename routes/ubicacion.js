@@ -2,30 +2,39 @@ var express = require('express');
 var app = express();
 var mdAutenticacion = require('./../middlewares/autenticacion');
 var Ubicacion = require('../models/ubicacion');
-const logger = require('./../utils/logger');
-const jwt = require('jsonwebtoken');
+var usuario = require('../models/animal');
+const logger = require('../middlewares/logger');
 var SEED = require('./../config/config').SEED;
+var config = require('./../config/server');
 
 // ================================================
 // Obtiene todas las ubicaciones
 // ================================================
-app.get('/', mdAutenticacion.verificaToken, (req, res, next) => {
-    Ubicacion.find({}, (err, ubicaciones) => {
-        if (err) {
-            logger.info('Error al obtener ubicaciones');
-            return res.status(500).json({
-                ok: false,
-                mensaje: 'Error al obtener ubicaciones',
-                erros: err
-            });
+app.get('/', (req, res, next) => {
+    var desde = +req.query.desde || 0;
 
-        }
-        logger.info('Obtiene ubicaciones');
-        res.status(200).json({
-            ok: true,
-            ubicaciones: ubicaciones
-        });
-    });
+    Ubicacion.find({}, 'nombre descripcion planta tipoUbicacion vigente')
+        .skip(desde)
+        .limit(+config.parametro.paginacionApi)
+        .populate('usuario', 'nombre role')
+        .exec(
+            (err, ubicaciones) => {
+                if (err) {
+                    logger.info('Error al obtener ubicaciones');
+                    return res.status(500).json({
+                        ok: false,
+                        mensaje: 'Error al obtener ubicaciones',
+                        erros: err
+                    });
+                }
+                Ubicacion.count({}, (error, conteo) => {
+                    logger.info('Ubicacion: Obtiene todas las ubicaciones');
+                    res.status(200).json({
+                        ok: true,
+                        ubicaciones: ubicaciones
+                    });
+                });
+            });
 
 });
 
@@ -59,7 +68,7 @@ app.post('/', mdAutenticacion.verificaToken, (req, res) => {
             ubicacion: ubicacionGuardada,
 
         });
-        logger.info('usuario creado: ' + ubicacion.nombre);
+        logger.info('Ubicacion: Crea una nueva ubicacion: "' + ubicacion.nombre + '"');
     });
 
 
@@ -111,7 +120,7 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
             res.status(200).json({
                 ok: true,
                 ubicacion: ubicacion,
-                mensaje: 'La ubicacion con el id: ' + id + ' ha sido actualizado correctamente',
+                mensaje: 'Ubicacion: Actualiza una ubicacion: "' + id + '" ha sido actualizado correctamente',
             });
             logger.info('Ubicacion con el id: ' + id + ' actualiza correctamente');
         });
@@ -148,7 +157,7 @@ app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
             ubicacion: ubicacionBorrado,
             mensaje: 'La ubicacion ' + req.params.nombre + ' con el id: ' + id + ' ha sido borrado correctamente',
         });
-        logger.info('Ubicacion con el id: ' + id + ' Borrado correctamente');
+        logger.info('Ubicacion: Elimina una ubicacion: "' + id + '" ha sido Elimiado correctamente');
 
     });
 

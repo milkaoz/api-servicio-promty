@@ -75,3 +75,413 @@
 [2019-10-24T23:49:18.751Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
 [2019-10-24T23:49:19.016Z] info Express server puerto: 3002 on line
 [2019-10-24T23:49:19.216Z] info Base de datos On line
+[2019-10-25T00:13:29.056Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T00:13:29.239Z] info Express server puerto: 3002 on line
+[2019-10-25T00:13:29.337Z] info Base de datos On line
+[2019-10-25T00:16:47.863Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T00:16:47.995Z] info Express server puerto: 3002 on line
+[2019-10-25T00:16:48.067Z] info Base de datos On line
+[2019-10-25T00:16:55.895Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T00:16:56.025Z] info Express server puerto: 3002 on line
+[2019-10-25T00:16:56.103Z] info Base de datos On line
+[2019-10-25T00:17:52.571Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T00:17:52.728Z] info Express server puerto: 3002 on line
+[2019-10-25T00:17:52.824Z] info Base de datos On line
+[2019-10-25T00:20:13.053Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T00:20:13.163Z] info Express server puerto: 3002 on line
+[2019-10-25T00:20:13.226Z] info Base de datos On line
+[2019-10-25T00:33:23.429Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T00:33:23.628Z] info Express server puerto: 3002 on line
+[2019-10-25T00:33:23.734Z] info Base de datos On line
+[2019-10-25T00:33:37.030Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T00:33:37.151Z] info Express server puerto: 3002 on line
+[2019-10-25T00:33:37.221Z] info Base de datos On line
+[2019-10-25T01:04:24.277Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T01:04:24.396Z] info Express server puerto: 3002 on line
+[2019-10-25T01:04:24.461Z] info Base de datos On line
+[2019-10-25T01:04:38.361Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T01:04:38.475Z] info Express server puerto: 3002 on line
+[2019-10-25T01:04:38.538Z] info Base de datos On line
+[2019-10-25T01:17:36.528Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T01:17:36.655Z] info Express server puerto: 3002 on line
+[2019-10-25T01:17:36.728Z] info Base de datos On line
+[2019-10-25T01:22:52.954Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T01:22:53.096Z] info Express server puerto: 3002 on line
+[2019-10-25T01:22:53.179Z] info Base de datos On line
+[2019-10-25T02:11:31.857Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:11:32.063Z] info Express server puerto: 3002 on line
+[2019-10-25T02:11:32.184Z] info Base de datos On line
+[2019-10-25T02:13:05.949Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:13:06.092Z] info Express server puerto: 3002 on line
+[2019-10-25T02:13:06.169Z] info Base de datos On line
+[2019-10-25T02:18:52.777Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:18:53.046Z] info Express server puerto: 3002 on line
+[2019-10-25T02:18:53.162Z] info Base de datos On line
+[2019-10-25T02:19:56.224Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:19:56.370Z] info Express server puerto: 3002 on line
+[2019-10-25T02:19:56.455Z] info Base de datos On line
+[2019-10-25T02:21:45.960Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:21:46.092Z] info Express server puerto: 3002 on line
+[2019-10-25T02:21:46.201Z] info Base de datos On line
+[2019-10-25T02:22:25.249Z] info Peticion realizada correctamente
+[2019-10-25T02:22:35.744Z] info Obtiene ubicaciones
+[2019-10-25T02:23:35.675Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:23:35.802Z] info Express server puerto: 3002 on line
+[2019-10-25T02:23:35.877Z] info Base de datos On line
+[2019-10-25T02:26:11.033Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:26:11.225Z] info Express server puerto: 3002 on line
+[2019-10-25T02:26:11.330Z] info Base de datos On line
+[2019-10-25T02:29:40.153Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:29:40.388Z] info Express server puerto: 3002 on line
+[2019-10-25T02:29:40.501Z] info Base de datos On line
+[2019-10-25T02:36:06.668Z] info Login correcto
+[2019-10-25T02:36:20.665Z] info Obtiene usuarios
+[2019-10-25T02:37:57.830Z] info usuario creado: Leandro tapia
+[2019-10-25T02:38:25.891Z] info usuario con el id: 5dadc5fd27f5b15d037023fe actualiza correctamente
+[2019-10-25T02:40:12.596Z] info Usuario con el id: 5db260058fb8dc3fb2a526bc Borrado correctamente
+[2019-10-25T02:40:33.829Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:40:34.078Z] info Express server puerto: 3002 on line
+[2019-10-25T02:40:34.288Z] info Base de datos On line
+[2019-10-25T02:43:17.246Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:43:17.368Z] info Express server puerto: 3002 on line
+[2019-10-25T02:43:17.457Z] info Base de datos On line
+[2019-10-25T02:45:58.080Z] info Obtiene usuarios
+[2019-10-25T02:46:10.291Z] info Obtiene animales
+[2019-10-25T02:47:35.150Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:47:35.370Z] info Express server puerto: 3002 on line
+[2019-10-25T02:47:35.443Z] info Base de datos On line
+[2019-10-25T02:47:41.278Z] info Animal: Obtiene todas los animales
+[2019-10-25T02:57:35.710Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T02:57:35.891Z] info Express server puerto: 3002 on line
+[2019-10-25T02:57:36.026Z] info Base de datos On line
+[2019-10-25T03:04:35.476Z] info Login correcto
+[2019-10-25T03:05:02.095Z] info Error al crear animal: ValidationError: ubicacion: Cast to ObjectID failed for value "" at path "ubicacion", activo: Cast to Boolean failed for value "" at path "activo", tipoAnimales: Path `tipoAnimales` is required., familia: Path `familia` is required.
+[2019-10-25T03:05:36.093Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T03:05:47.910Z] info Error al crear animal: ValidationError: activo: Cast to Boolean failed for value "" at path "activo", tipoAnimales: Path `tipoAnimales` is required., familia: Path `familia` is required.
+[2019-10-25T03:05:53.952Z] info Error al crear animal: ValidationError: tipoAnimales: Path `tipoAnimales` is required., familia: Path `familia` is required.
+[2019-10-25T03:12:25.791Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:12:25.920Z] info Express server puerto: 3002 on line
+[2019-10-25T03:12:25.987Z] info Base de datos On line
+[2019-10-25T03:22:17.397Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:22:17.518Z] info Express server puerto: 3002 on line
+[2019-10-25T03:22:17.614Z] info Base de datos On line
+[2019-10-25T03:30:40.275Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:30:40.460Z] info Express server puerto: 3002 on line
+[2019-10-25T03:30:40.553Z] info Base de datos On line
+[2019-10-25T03:31:21.837Z] info Error al crear animal: ValidationError: ordenAnimal: Path `ordenAnimal` is required., claseAnimal: Path `claseAnimal` is required.
+[2019-10-25T03:31:45.791Z] info Error al crear animal: ValidationError: ordenAnimal: Path `ordenAnimal` is required., claseAnimal: Path `claseAnimal` is required.
+[2019-10-25T03:31:57.368Z] info Error al crear animal: ValidationError: ordenAnimal: Path `ordenAnimal` is required., claseAnimal: Path `claseAnimal` is required.
+[2019-10-25T03:32:23.228Z] info Error al crear animal: ValidationError: ordenAnimal: Path `ordenAnimal` is required., claseAnimal: Path `claseAnimal` is required.
+[2019-10-25T03:32:51.661Z] info Error al crear animal: ValidationError: ordenAnimal: Path `ordenAnimal` is required., claseAnimal: Path `claseAnimal` is required.
+[2019-10-25T03:33:38.048Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:33:38.180Z] info Express server puerto: 3002 on line
+[2019-10-25T03:33:38.278Z] info Base de datos On line
+[2019-10-25T03:33:47.123Z] info Error al crear animal: ValidationError: ordenAnimal: Path `ordenAnimal` is required.
+[2019-10-25T03:33:54.146Z] info Error al crear animal: ValidationError: claseAnimal: Path `claseAnimal` is required.
+[2019-10-25T03:33:59.078Z] info usuario creado: Pinguino de humboldt
+[2019-10-25T03:37:27.153Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T03:37:37.951Z] info Login correcto
+[2019-10-25T03:39:46.140Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:39:46.256Z] info Express server puerto: 3002 on line
+[2019-10-25T03:39:46.336Z] info Base de datos On line
+[2019-10-25T03:42:04.901Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:42:05.163Z] info Express server puerto: 3002 on line
+[2019-10-25T03:42:05.381Z] info Base de datos On line
+[2019-10-25T03:46:34.288Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:46:34.408Z] info Express server puerto: 3002 on line
+[2019-10-25T03:46:34.480Z] info Base de datos On line
+[2019-10-25T03:57:18.398Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T03:57:18.671Z] info Express server puerto: 3002 on line
+[2019-10-25T03:57:18.824Z] info Base de datos On line
+[2019-10-25T03:58:25.538Z] info Login correcto
+[2019-10-25T04:00:42.301Z] info Animal con el id: 5db26d2767904741f4a423d7 actualiza correctamente
+[2019-10-25T04:02:11.884Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:02:12.100Z] info Express server puerto: 3002 on line
+[2019-10-25T04:02:12.301Z] info Base de datos On line
+[2019-10-25T04:03:05.568Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:03:05.690Z] info Express server puerto: 3002 on line
+[2019-10-25T04:03:05.764Z] info Base de datos On line
+[2019-10-25T04:03:42.355Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:03:42.553Z] info Express server puerto: 3002 on line
+[2019-10-25T04:03:42.674Z] info Base de datos On line
+[2019-10-25T04:09:02.032Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:09:37.487Z] info Login correcto
+[2019-10-25T04:09:59.263Z] info usuario creado: Leandro tapia
+[2019-10-25T04:10:32.770Z] error Error al crear animal: ValidationError: ordenAnimal: herbiboros no es un tipo de ubicacion valido
+[2019-10-25T04:11:46.067Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:11:46.235Z] info Express server puerto: 3002 on line
+[2019-10-25T04:11:46.315Z] info Base de datos On line
+[2019-10-25T04:11:49.380Z] error Error al crear animal: ValidationError: ordenAnimal: herbiboros no es un orden de animal valido
+[2019-10-25T04:12:43.681Z] error Error al crear animal: ValidationError: ordenAnimal: herbivoros no es un orden de animal valido
+[2019-10-25T04:13:01.099Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:13:01.326Z] info Express server puerto: 3002 on line
+[2019-10-25T04:13:01.512Z] info Base de datos On line
+[2019-10-25T04:13:15.431Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:13:15.650Z] info Express server puerto: 3002 on line
+[2019-10-25T04:13:15.740Z] info Base de datos On line
+[2019-10-25T04:13:22.050Z] info Animal: Crea un nuevo animal: "Elefante africano"
+[2019-10-25T04:14:35.054Z] info animal con el id: 5db27661e4c09143664c044f Borrado correctamente
+[2019-10-25T04:16:58.964Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:16:59.147Z] info Express server puerto: 3002 on line
+[2019-10-25T04:16:59.254Z] info Base de datos On line
+[2019-10-25T04:17:04.476Z] error No existe un animal con el id: 5db27661e4c09143664c044f
+[2019-10-25T04:17:11.901Z] info Animal: Crea un nuevo animal: "Elefante africano"
+[2019-10-25T04:17:22.356Z] info Usuario: Elimina un usuario: "5db277470c48fc4390ff7007" borrado correctamente
+[2019-10-25T04:23:03.292Z] info Peticion realizada correctamente
+[2019-10-25T04:23:03.439Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T04:23:03.479Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:03.531Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:03.629Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:03.676Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T04:23:03.708Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:03.756Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:03.815Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:04.095Z] info Login correcto
+[2019-10-25T04:23:04.124Z] info Animal: Obtiene todas los animales
+[2019-10-25T04:23:04.155Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:04.190Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:23:04.225Z] error No existe un animal con el id: 5db277470c48fc4390ff7007
+[2019-10-25T04:31:19.750Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:31:19.950Z] info Express server puerto: 3002 on line
+[2019-10-25T04:31:20.053Z] info Base de datos On line
+[2019-10-25T04:31:36.487Z] info Animal: Obtiene todas los animales
+[2019-10-25T04:36:18.502Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:36:18.721Z] info Express server puerto: 3002 on line
+[2019-10-25T04:36:18.847Z] info Base de datos On line
+[2019-10-25T04:36:39.568Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:36:39.754Z] info Express server puerto: 3002 on line
+[2019-10-25T04:36:39.853Z] info Base de datos On line
+[2019-10-25T04:41:39.780Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:41:39.993Z] info Express server puerto: 3002 on line
+[2019-10-25T04:41:40.133Z] info Base de datos On line
+[2019-10-25T04:41:47.305Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T04:41:53.794Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T04:41:57.408Z] info Animal: Obtiene todas los animales
+[2019-10-25T04:42:05.492Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:42:05.782Z] info Express server puerto: 3002 on line
+[2019-10-25T04:42:05.939Z] info Base de datos On line
+[2019-10-25T04:42:09.540Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T04:44:12.890Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:44:13.066Z] info Express server puerto: 3002 on line
+[2019-10-25T04:44:13.170Z] info Base de datos On line
+[2019-10-25T04:44:19.984Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T04:48:21.513Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:48:21.705Z] info Express server puerto: 3002 on line
+[2019-10-25T04:48:21.815Z] info Base de datos On line
+[2019-10-25T04:48:28.517Z] info Animal: Obtiene todas los animales
+[2019-10-25T04:49:26.477Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:49:26.757Z] info Express server puerto: 3002 on line
+[2019-10-25T04:49:26.917Z] info Base de datos On line
+[2019-10-25T04:50:15.246Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:50:15.495Z] info Express server puerto: 3002 on line
+[2019-10-25T04:50:15.658Z] info Base de datos On line
+[2019-10-25T04:53:41.957Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T04:53:42.135Z] info Express server puerto: 3002 on line
+[2019-10-25T04:53:42.239Z] info Base de datos On line
+[2019-10-25T04:53:44.961Z] info Animal: Obtiene todas los animales
+[2019-10-25T04:55:12.201Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T04:55:41.324Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T04:55:48.796Z] info Login correcto
+[2019-10-25T04:56:01.164Z] info Animal: Crea un nuevo animal: "Elefante africano"
+[2019-10-25T04:56:35.651Z] info usuario creado: Ruben caceres
+[2019-10-25T04:56:53.380Z] info usuario creado: Sandra Vazquez
+[2019-10-25T04:57:07.508Z] info usuario creado: manuel contreras
+[2019-10-25T04:57:17.986Z] error Error al crear usuario: ValidationError: email: email debe ser unico
+[2019-10-25T04:57:20.514Z] error Error al crear usuario: ValidationError: email: email debe ser unico
+[2019-10-25T04:57:29.862Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T05:00:08.731Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:00:08.971Z] info Express server puerto: 3002 on line
+[2019-10-25T05:00:09.090Z] info Base de datos On line
+[2019-10-25T05:01:57.661Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:01:57.795Z] info Express server puerto: 3002 on line
+[2019-10-25T05:01:57.893Z] info Base de datos On line
+[2019-10-25T05:02:45.529Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:02:45.716Z] info Express server puerto: 3002 on line
+[2019-10-25T05:02:45.809Z] info Base de datos On line
+[2019-10-25T05:03:05.526Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:03:05.695Z] info Express server puerto: 3002 on line
+[2019-10-25T05:03:05.805Z] info Base de datos On line
+[2019-10-25T05:05:16.347Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:05:16.540Z] info Express server puerto: 3002 on line
+[2019-10-25T05:05:16.633Z] info Base de datos On line
+[2019-10-25T05:05:31.984Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:05:32.147Z] info Express server puerto: 3002 on line
+[2019-10-25T05:05:32.256Z] info Base de datos On line
+[2019-10-25T05:05:38.136Z] error Error al obtener usuarios
+[2019-10-25T05:07:34.029Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:07:34.207Z] info Express server puerto: 3002 on line
+[2019-10-25T05:07:34.313Z] info Base de datos On line
+[2019-10-25T05:07:41.111Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T05:11:05.376Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:11:05.559Z] info Express server puerto: 3002 on line
+[2019-10-25T05:11:05.719Z] info Base de datos On line
+[2019-10-25T05:11:41.074Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T05:12:13.150Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T05:14:47.400Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:14:47.526Z] info Express server puerto: 3002 on line
+[2019-10-25T05:14:47.590Z] info Base de datos On line
+[2019-10-25T05:15:32.365Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:15:32.596Z] info Express server puerto: 3002 on line
+[2019-10-25T05:15:32.814Z] info Base de datos On line
+[2019-10-25T05:15:34.714Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T05:16:31.184Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:16:31.400Z] info Express server puerto: 3002 on line
+[2019-10-25T05:16:31.518Z] info Base de datos On line
+[2019-10-25T05:17:03.217Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:17:03.408Z] info Express server puerto: 3002 on line
+[2019-10-25T05:17:03.523Z] info Base de datos On line
+[2019-10-25T05:17:35.209Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:17:35.413Z] info Express server puerto: 3002 on line
+[2019-10-25T05:17:35.556Z] info Base de datos On line
+[2019-10-25T05:17:40.820Z] info Animal: Obtiene todas los animales
+[2019-10-25T05:18:42.569Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:18:42.772Z] info Express server puerto: 3002 on line
+[2019-10-25T05:18:42.887Z] info Base de datos On line
+[2019-10-25T05:18:48.894Z] info Animal: Obtiene todas los animales
+[2019-10-25T05:19:22.888Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:19:23.128Z] info Express server puerto: 3002 on line
+[2019-10-25T05:19:23.340Z] info Base de datos On line
+[2019-10-25T05:19:24.240Z] info Animal: Obtiene todas los animales
+[2019-10-25T05:21:19.619Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:21:19.915Z] info Express server puerto: 3002 on line
+[2019-10-25T05:21:20.051Z] info Base de datos On line
+[2019-10-25T05:21:47.973Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:21:48.092Z] info Express server puerto: 3002 on line
+[2019-10-25T05:21:48.164Z] info Base de datos On line
+[2019-10-25T05:22:23.147Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:22:23.335Z] info Express server puerto: 3002 on line
+[2019-10-25T05:22:23.434Z] info Base de datos On line
+[2019-10-25T05:22:52.640Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:22:52.852Z] info Express server puerto: 3002 on line
+[2019-10-25T05:22:53.017Z] info Base de datos On line
+[2019-10-25T05:24:08.303Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:24:08.538Z] info Express server puerto: 3002 on line
+[2019-10-25T05:24:08.671Z] info Base de datos On line
+[2019-10-25T05:24:12.799Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T05:24:18.767Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T05:24:26.209Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T05:24:33.134Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T05:26:13.956Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:26:14.190Z] info Express server puerto: 3002 on line
+[2019-10-25T05:26:14.307Z] info Base de datos On line
+[2019-10-25T05:27:40.939Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:27:41.151Z] info Express server puerto: 3002 on line
+[2019-10-25T05:27:41.270Z] info Base de datos On line
+[2019-10-25T05:28:07.410Z] info Peticion realizada correctamente
+[2019-10-25T05:29:37.902Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:29:38.023Z] info Express server puerto: 3002 on line
+[2019-10-25T05:29:38.097Z] info Base de datos On line
+[2019-10-25T05:29:56.736Z] info Peticion realizada correctamente
+[2019-10-25T05:31:32.169Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:31:32.406Z] info Express server puerto: 3002 on line
+[2019-10-25T05:31:32.512Z] info Base de datos On line
+[2019-10-25T05:35:00.390Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:35:00.554Z] info Express server puerto: 3002 on line
+[2019-10-25T05:35:00.627Z] info Base de datos On line
+[2019-10-25T05:35:22.317Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:35:22.511Z] info Express server puerto: 3002 on line
+[2019-10-25T05:35:22.626Z] info Base de datos On line
+[2019-10-25T05:35:56.001Z] info Peticion realizada correctamente
+[2019-10-25T05:36:10.480Z] info Peticion realizada correctamente
+[2019-10-25T05:36:16.018Z] info Peticion realizada correctamente
+[2019-10-25T05:38:01.025Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:38:01.215Z] info Express server puerto: 3002 on line
+[2019-10-25T05:38:01.324Z] info Base de datos On line
+[2019-10-25T05:38:06.358Z] info Peticion realizada correctamente
+[2019-10-25T05:38:13.537Z] info Peticion realizada correctamente
+[2019-10-25T05:38:22.881Z] info Peticion realizada correctamente
+[2019-10-25T05:38:49.155Z] info Peticion realizada correctamente
+[2019-10-25T05:38:57.650Z] info Peticion realizada correctamente
+[2019-10-25T05:39:18.224Z] info Peticion realizada correctamente
+[2019-10-25T05:39:25.362Z] info Peticion realizada correctamente
+[2019-10-25T05:40:49.054Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:40:49.283Z] info Express server puerto: 3002 on line
+[2019-10-25T05:40:49.404Z] info Base de datos On line
+[2019-10-25T05:49:41.589Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:49:41.796Z] info Express server puerto: 3002 on line
+[2019-10-25T05:49:42.128Z] info Base de datos On line
+[2019-10-25T05:50:09.605Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:50:09.861Z] info Express server puerto: 3002 on line
+[2019-10-25T05:50:09.994Z] info Base de datos On line
+[2019-10-25T05:53:16.767Z] info Peticion realizada correctamente
+[2019-10-25T05:53:21.626Z] info Peticion realizada correctamente
+[2019-10-25T05:57:13.079Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T05:57:13.261Z] info Express server puerto: 3002 on line
+[2019-10-25T05:57:13.378Z] info Base de datos On line
+[2019-10-25T06:01:28.172Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:01:28.396Z] info Express server puerto: 3002 on line
+[2019-10-25T06:01:28.503Z] info Base de datos On line
+[2019-10-25T06:03:44.584Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:03:44.769Z] info Express server puerto: 3002 on line
+[2019-10-25T06:03:44.868Z] info Base de datos On line
+[2019-10-25T06:06:00.632Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:06:00.830Z] info Express server puerto: 3002 on line
+[2019-10-25T06:06:00.944Z] info Base de datos On line
+[2019-10-25T06:06:03.371Z] info Peticion realizada correctamente
+[2019-10-25T06:07:13.061Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T06:07:40.458Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T06:07:49.235Z] info Usuario: Obtiene todas los usuarios
+[2019-10-25T06:07:53.368Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T06:07:59.205Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-25T06:08:03.647Z] info Login correcto
+[2019-10-25T06:08:16.293Z] info Ubicacion: Crea una nueva ubicacion: "Sala 5"
+[2019-10-25T06:08:26.781Z] info Error al buscar ubicacion con el id: 5da9011aa0b52a85b900fb5b
+[2019-10-25T06:08:33.977Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T06:08:45.105Z] info Ubicacion con el id: 5dada35d239d6f57a8f2a7f0 actualiza correctamente
+[2019-10-25T06:08:54.020Z] info Peticion realizada correctamente
+[2019-10-25T06:17:34.903Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:17:35.139Z] info Express server puerto: 3002 on line
+[2019-10-25T06:17:35.241Z] info Base de datos On line
+[2019-10-25T06:18:06.764Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:18:06.954Z] info Express server puerto: 3002 on line
+[2019-10-25T06:18:07.062Z] info Base de datos On line
+[2019-10-25T06:18:15.135Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:18:15.383Z] info Express server puerto: 3002 on line
+[2019-10-25T06:18:15.563Z] info Base de datos On line
+[2019-10-25T06:19:09.876Z] info Peticion realizada correctamente
+[2019-10-25T06:19:15.921Z] info Peticion realizada correctamente
+[2019-10-25T06:21:12.731Z] info Animal: Obtiene todas los animales
+[2019-10-25T06:21:22.817Z] info Peticion realizada correctamente
+[2019-10-25T06:21:48.143Z] info Peticion realizada correctamente
+[2019-10-25T06:22:02.240Z] info Peticion realizada correctamente
+[2019-10-25T06:24:05.712Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:24:05.961Z] info Express server puerto: 3002 on line
+[2019-10-25T06:24:06.140Z] info Base de datos On line
+[2019-10-25T06:24:07.603Z] info Peticion realizada correctamente
+[2019-10-25T06:24:52.748Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:24:52.952Z] info Express server puerto: 3002 on line
+[2019-10-25T06:24:53.101Z] info Base de datos On line
+[2019-10-25T06:24:55.178Z] info Peticion realizada correctamente
+[2019-10-25T06:31:37.847Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:31:38.038Z] info Express server puerto: 3002 on line
+[2019-10-25T06:31:38.159Z] info Base de datos On line
+[2019-10-25T06:33:38.378Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:33:38.581Z] info Express server puerto: 3002 on line
+[2019-10-25T06:33:38.682Z] info Base de datos On line
+[2019-10-25T06:33:48.708Z] info Peticion realizada correctamente
+[2019-10-25T06:34:08.092Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:34:08.480Z] info Express server puerto: 3002 on line
+[2019-10-25T06:34:08.691Z] info Base de datos On line
+[2019-10-25T06:34:10.777Z] info Peticion realizada correctamente
+[2019-10-25T06:35:12.852Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:35:13.104Z] info Express server puerto: 3002 on line
+[2019-10-25T06:35:13.250Z] info Base de datos On line
+[2019-10-25T06:35:13.798Z] info Peticion realizada correctamente
+[2019-10-25T06:35:29.702Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T06:36:13.736Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:36:13.961Z] info Express server puerto: 3002 on line
+[2019-10-25T06:36:14.080Z] info Base de datos On line
+[2019-10-25T06:36:21.867Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-25T06:36:29.579Z] info Peticion realizada correctamente
+[2019-10-25T06:37:33.452Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:37:33.766Z] info Express server puerto: 3002 on line
+[2019-10-25T06:37:33.885Z] info Base de datos On line
+[2019-10-25T06:37:36.412Z] info Peticion realizada correctamente
+[2019-10-25T06:39:06.692Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:39:06.878Z] info Express server puerto: 3002 on line
+[2019-10-25T06:39:06.973Z] info Base de datos On line
+[2019-10-25T06:39:10.215Z] info Peticion realizada correctamente
+[2019-10-25T06:39:55.026Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-25T06:39:55.349Z] info Express server puerto: 3002 on line
+[2019-10-25T06:39:55.574Z] info Base de datos On line
+[2019-10-25T06:39:55.828Z] info Peticion realizada correctamente

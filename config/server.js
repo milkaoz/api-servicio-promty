@@ -7,5 +7,8 @@ module.exports = {
         mongoUser: process.env.MONGO_USER || 'promtyUser',
         mongoPass: process.env.MONGO_PASS || 'pass123',
         mongoDB: process.env.MONGO_DB || 'promtyDB',
+    },
+    parametro: {
+        paginacionApi: process.env.PAGINACION || '3', //TODO: cambiar parametro antes de pasar a produccion.
     }
 };
