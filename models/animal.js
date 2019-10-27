@@ -17,10 +17,10 @@ var ordenDeAnimales = {
 var animalSchema = new Schema({
 
     nombre: { type: String, unique: true, required: [true, 'El nombre del animal es necesario'] },
-    name: { type: String, required: [true, 'La descripcion es necesaria'] },
-    nombreCientifico: { type: String, required: false },
+    name: { type: String, unique: true, required: [true, 'La descripcion es necesaria'] },
+    nombreCientifico: { type: String, unique: true, required: false },
     descripcion: { type: String, required: [true, 'La descripcion es necesaria'] },
-    img: { Type: String, required: false },
+    img: { type: String, required: false },
     ubicacion: { type: Schema.Types.ObjectId, ref: 'Ubicacion' },
     claseAnimal: { type: String, required: true, enum: clasesDeAnimales },
     ordenAnimal: { type: String, required: true, enum: ordenDeAnimales },

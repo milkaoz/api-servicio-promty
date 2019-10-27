@@ -13,7 +13,7 @@ var config = require('./../config/server');
 app.get('/', (req, res, next) => {
     var desde = +req.query.desde || 0;
 
-    Animal.find({}, 'nombre name nombreCientifico descripcion ubicacion claseAnimal ordenAnimal activo')
+    Animal.find({}, 'nombre name nombreCientifico descripcion ubicacion claseAnimal ordenAnimal activo img')
         .skip(desde)
         .limit(+config.parametro.paginacionApi)
         .populate('usuario', 'nombre role')
@@ -28,7 +28,7 @@ app.get('/', (req, res, next) => {
                         erros: err
                     });
                 }
-                Animal.count({}, (error, conteo) => {
+                Animal.countDocuments({}, (error, conteo) => {
                     logger.info('Animal: Obtiene todas los animales');
                     res.status(200).json({
                         ok: true,

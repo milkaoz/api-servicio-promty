@@ -13,7 +13,7 @@ var config = require('./../config/server');
 app.get('/', (req, res, next) => {
     var desde = +req.query.desde || 0;
 
-    Ubicacion.find({}, 'nombre descripcion planta tipoUbicacion vigente')
+    Ubicacion.find({}, 'nombre descripcion planta tipoUbicacion vigente img')
         .skip(desde)
         .limit(+config.parametro.paginacionApi)
         .populate('usuario', 'nombre role')
@@ -27,7 +27,7 @@ app.get('/', (req, res, next) => {
                         erros: err
                     });
                 }
-                Ubicacion.count({}, (error, conteo) => {
+                Ubicacion.countDocuments({}, (error, conteo) => {
                     logger.info('Ubicacion: Obtiene todas las ubicaciones');
                     res.status(200).json({
                         ok: true,
@@ -155,7 +155,7 @@ app.delete('/:id', mdAutenticacion.verificaToken, (req, res) => {
         res.status(201).json({
             ok: true,
             ubicacion: ubicacionBorrado,
-            mensaje: 'La ubicacion ' + req.params.nombre + ' con el id: ' + id + ' ha sido borrado correctamente',
+            mensaje: 'La ubicacion con el id: ' + id + ' ha sido borrado correctamente',
         });
         logger.info('Ubicacion: Elimina una ubicacion: "' + id + '" ha sido Elimiado correctamente');
 

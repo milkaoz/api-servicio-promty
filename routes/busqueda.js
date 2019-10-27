@@ -6,6 +6,46 @@ var Ubicacion = require('../models/ubicacion');
 
 var app = express();
 
+// ================================================
+// busqueda por coleccion
+// ================================================
+
+app.get('/coleccion/:tabla/:busqueda', (req, res) => {
+    var busqueda = req.params.busqueda;
+    var tabla = req.params.tabla;
+    var regex = new RegExp(busqueda, 'i');
+    var promesa;
+    switch (tabla) {
+
+        case 'animal':
+            promesa = buscarAnimales(busqueda, regex);
+            break;
+        case 'ubicacion':
+            promesa = buscarUbicaciones(busqueda, regex);
+            break;
+        default:
+            logger.error('Tipo de tabla/coleccion no valido');
+            return res.status(400).json({
+                ok: false,
+                mensaje: 'los tipos de busqueda son solo \"animal\" o  \"ubicacion\"',
+                error: { message: 'Tipo de tabla/coleccion no valido' }
+
+
+            });
+    }
+
+    promesa.then(data => {
+        logger.info('Peticion realizada correctamente');
+        res.status(200).json({
+            ok: true,
+            [tabla]: data
+        });
+    });
+});
+
+// ================================================
+// Busqueda general
+// ================================================
 app.get('/todo/:busqueda', (req, res, next) => {
 
     var busqueda = req.params.busqueda;
@@ -25,27 +65,6 @@ app.get('/todo/:busqueda', (req, res, next) => {
 
 
 });
-
-/*
-function buscarAnimales(busqueda, regex) {
-
-    return new Promise((resolve, reject) => {
-
-        Animal.find({ nombre: regex }, (err, animales) => {
-
-            if (err) {
-                logger.error('Metodo: "buscarAnimales", Error: al intentar cargar Animales');
-                reject('Error al cargar Animales: ', err);
-
-            } else {
-                resolve(animales);
-            }
-
-        });
-    });
-
-}*/
-
 
 function buscarAnimales(busqueda, regex) {
 

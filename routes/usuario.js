@@ -28,7 +28,7 @@ app.get('/', (req, res, next) => {
                     });
 
                 }
-                Usuario.count({}, (error, conteo) => {
+                Usuario.countDocuments({}, (error, conteo) => {
 
                     logger.info('Usuario: Obtiene todas los usuarios');
                     res.status(200).json({
@@ -110,7 +110,7 @@ app.put('/:id', mdAutenticacion.verificaToken, (req, res) => {
         usuario.email = body.email;
         usuario.password = bcrypt.hashSync(body.password, 10);
         usuario.role = body.role;
-
+        usuario.fechaModificacion = Date.now();
 
         try {
             usuario.save((err, usuarioGuardada) => {

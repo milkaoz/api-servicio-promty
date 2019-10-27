@@ -12,7 +12,7 @@ var ubicacionSchema = new Schema({
 
     nombre: { type: String, unique: true, required: [true, 'El nombre de la ubicacion es necesario'] },
     descripcion: { type: String, required: [true, 'La descripcion es necesaria'] },
-    img: { Type: String, required: false },
+    img: { type: String, required: false },
     planta: { type: String, required: false, default: '' },
     tipoUbicacion: { type: String, required: true, enum: tiposDeUbicaciones },
     vigente: { type: Boolean, required: [true, 'Se debe indicar si esta vigente la ubicacion'] },
