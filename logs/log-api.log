@@ -1,0 +1,26 @@
+[2019-10-28T17:24:44.824Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-28T17:24:46.129Z] info Express server puerto: 3002 on line
+[2019-10-28T17:24:47.100Z] info Base de datos On line
+[2019-10-28T17:25:16.523Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-28T17:25:16.991Z] info Express server puerto: 3002 on line
+[2019-10-28T17:25:17.195Z] info Base de datos On line
+[2019-10-28T17:25:42.940Z] info Peticion realizada correctamente
+[2019-10-28T17:25:48.584Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-28T17:25:56.505Z] info Usuario: Obtiene todas los usuarios
+[2019-10-28T17:26:06.454Z] info Login Normal Correcto
+[2019-10-28T17:26:24.348Z] info Error al crear ubicacion: ValidationError: nombre: nombre debe ser unico
+[2019-10-28T17:26:39.864Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-28T17:26:54.210Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-28T17:27:13.057Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-28T17:27:16.056Z] info Ubicacion: Obtiene todas las ubicaciones
+[2019-10-28T17:27:28.900Z] info Animal: Obtiene todas los animales
+[2019-10-28T17:36:51.323Z] info Token no valido: TokenExpiredError: jwt expired
+[2019-10-28T17:37:07.071Z] info usuario creado: Leo Ruiz
+[2019-10-28T17:37:32.561Z] info Login Normal Correcto
+[2019-10-28T17:44:21.821Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-28T17:44:22.133Z] info Express server puerto: 3002 on line
+[2019-10-28T17:44:22.226Z] info Base de datos On line
+[2019-10-29T15:15:08.673Z] info stringDB: mongodb://promtyUser:pass123@localhost:27017/promtyDB
+[2019-10-29T15:15:09.119Z] info Express server puerto: 3002 on line
+[2019-10-29T15:15:09.345Z] info Base de datos On line
+[2019-10-29T15:16:23.319Z] info Usuario: Obtiene todas los usuarios

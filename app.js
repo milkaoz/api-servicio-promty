@@ -65,6 +65,6 @@ app.use('/', appRoutes);
 //Rutas
 
 // Escuchar peticiones
-app.listen(3002, () => {
+app.listen(3003, () => {
     logger.info('Express server puerto: 3002 on line');
 });

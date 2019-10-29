@@ -1,0 +1,12 @@
+db.usuarios.insert([
+    {
+	"role" : "ADMIN_ROLE",
+	"nombre" : "admin",
+	"email" : "admin@oopart.com",
+	"password" : "$2a$10$c/oWW55g5AARtGvs9SX.deO2xrgwO3Z636r02.nolRn6DCscJ1ZGm",
+	"img" : "5dadc5fd27f5b15d037023fe-949.jpg",
+	"fechaCreacion" : ISODate("2019-10-26T21:55:00.290-03:00"),
+	"fechaModificacion" : ISODate("2019-10-27T18:29:56.963-03:00"),
+	"google" : false
+}
+    ])
